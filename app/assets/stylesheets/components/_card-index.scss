@@ -18,13 +18,17 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
+  transition: 2s;
+  }
 
 .card {
   width: 300px;
   padding: 5px;
   margin: 10px;
   border-radius: 4px;
+    &:hover {
+      transform: scale(1.02);
+    }
 }
 
 .description-container {
