@@ -1,10 +1,30 @@
 .page-container {
   display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.filter-container {
+  position: relative;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 20vh;
+  padding: 30px;
+  border: 1px solid black;
 }
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  transition: 2s;
 }
 
 .card {
@@ -12,4 +32,17 @@
   padding: 5px;
   margin: 10px;
   border-radius: 4px;
+    &:hover {
+      transform: scale(1.02);
+    }
+}
+
+.description-container {
+  margin-top: 5px;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+.card-price {
+  text-align: right;
 }

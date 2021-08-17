@@ -1,19 +1,23 @@
 <div class="page-container">
-  <div>
+<div class="filter-container">
+  <div class="filters">
     <p>Activity</p>
     <p>Price range</p>
     <p>Deplacement</p>
     <p>calendar</p>
     <p>submit</p>
   </div>
+  </div>
   <div class="card-container">
     <% @offers.each do |offer| %>
       <div class="card">
         <img src="https://source.unsplash.com/random" alt="">
-        <p><%= offer.title %></p>
-        <p><%= offer.description %></p>
-        <p><%= offer.price %> DogeCoin</p>
-        <p><%= link_to 'En Savoir Plus', offer %></P>
+        <div class="description-container">
+          <h4><%= offer.title %></h4>
+          <p><%= offer.description %></p>
+          <p class="card-price"><%= offer.price %> DogeCoin</p>
+          <p><%= link_to 'En Savoir Plus', offer %></P>
+        </div>
       </div>
     <% end %>
   </div>
