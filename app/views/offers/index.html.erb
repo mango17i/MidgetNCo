@@ -1,0 +1,20 @@
+<div class="page-container">
+  <div>
+    <p>Activity</p>
+    <p>Price range</p>
+    <p>Deplacement</p>
+    <p>calendar</p>
+    <p>submit</p>
+  </div>
+  <div class="card-container">
+    <% @offers.each do |offer| %>
+      <div class="card">
+        <img src="https://source.unsplash.com/random" alt="">
+        <p><%= offer.title %></p>
+        <p><%= offer.description %></p>
+        <p><%= offer.price %> DogeCoin</p>
+        <p><%= link_to 'En Savoir Plus', offer %></P>
+      </div>
+    <% end %>
+  </div>
+</div>
