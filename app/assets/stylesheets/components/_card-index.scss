@@ -1,28 +1,9 @@
-.page-container {
-  display: flex;
-  position: relative;
-  justify-content: flex-end;
-}
-
-.filter-container {
-  position: relative;
-}
-
-.filters {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: sticky;
-  top: 20vh;
-  padding: 30px;
-  border: 1px solid black;
-}
-
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
   width: 80%;
   transition: 2s;
 }
@@ -41,6 +22,16 @@
   margin-top: 5px;
   padding: 10px;
   padding-bottom: 0px;
+}
+
+.offer-description {
+  max-width: 300px;
+  max-height: 80px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .card-price {

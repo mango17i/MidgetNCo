@@ -1,0 +1,17 @@
+<div class="banner-title-show">
+  <h2><%= @offer.title %></h2>
+</div>
+
+<div>
+  <div><img src="" alt=""></div>
+  <div>
+    <p></p>
+  </div>
+</div>
+
+<div>
+  <div>
+    <%= @offer.description %>
+  </div>
+  <div><%= link_to "Book This Midget !", new_offer_reservation_path(@offer) %></div>
+</div>
