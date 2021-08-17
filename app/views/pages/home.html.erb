@@ -1,5 +1,4 @@
-<div class="homepage">    
-    
+<div class="homepage">
     <div class="home-banner">
         <h1>MidgetNCo</h1>
         <button>
@@ -52,9 +51,9 @@
                                 <div class="card__footer">
                                 <div class="comment">
                                     <i class="fas fa-quote-left mr-2"></i>
-                                    <small><%#= bookmark.comment %></small> 
+                                    <small><%#= bookmark.comment %></small>
                                     <i class="fas fa-quote-right mr-2"></i>
-                                </div> 
+                                </div>
                                 <div class="center">
                                     <%#= link_to bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"} do %>
                                     <i class="fas fa-trash-alt"></i>

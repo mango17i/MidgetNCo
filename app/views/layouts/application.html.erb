@@ -9,6 +9,7 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
   <body>
+
     <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
         <a class="navbar-brand" href="#">
             <img id="logo" src="https://risibank.fr/cache/stickers/d1387/138733-full.png" />
@@ -36,10 +37,9 @@
             </ul>
         </div>
     </div>
-   
 
     <%= yield %>
-    
+
     <footer>
       <ul class="social" id="social">
         <li class="fb"><a href="https://fr-fr.facebook.com/"><%= icon('fab', 'facebook') %></a></li>
