@@ -1,6 +1,25 @@
+.navbar{
+  position: sticky;
+  top: 2px;
+}
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  padding: 10px 50px 0 50px;
+  background: transparent;
+  text-shadow: 10px 10px 50px white;
+}
+.dropdown-menu{
+    opacity: .8;
+    border-radius: 8px;
+}
+.navbar-lewagon a:hover{
+    font-weight: 900;
+    color: white;
+    text-shadow: 20px 20px 70px white;
+}
+.navbar-lewagon img:hover{
+  box-shadow: 20px 20px 70px white;
+
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -8,8 +27,22 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 120px;
+  height: 120px;
+  text-shadow: none;
+  box-shadow: none;
 }
-body{
-  color: rgb(211, 18, 18) !important;
+#burger-menu{
+  border-radius: 50%;
+  background: transparent;
+  text-align: center;
+  box-shadow: none;
+  color: white;
+  border: 0;
+  padding: 0px;
+  background-color: rgba(255, 255, 255, .3);
+}
+#burger-menu:hover{
+  box-shadow: 0 10px 30px rgba(247, 247, 247, 0.5);
+
 }

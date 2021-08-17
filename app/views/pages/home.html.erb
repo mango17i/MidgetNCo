@@ -1,2 +1,93 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="homepage">    
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <a class="navbar-brand" href="#">
+        <img id="logo" src="https://risibank.fr/cache/stickers/d1387/138733-full.png" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <%# <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Messages</a>
+        </li> %>
+        <li class="nav-item dropdown">
+            <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            </div>
+        </li>
+        </ul>
+    </div>
+    </div>
+    <div class="home-banner">
+        <h1>MidgetNCo</h1>
+        <button>
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+            </svg>
+            <span>User</span>
+        </button>
+        <button>
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+            </svg>
+            <span>Midget</span>
+        </button>
+    </div>
+</div>
+<div class="container">
+<div class="row justify-content-around">
+    <div class="knowus col-6">
+    <%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit " * 10 %>
+    </div>
+    <div class="policies col-6">
+    <%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit " * 10 %>
+    </div>
+    <div class="best col-6">
+<%# <article class="row">
+          <% @list.offers.each do |offer| %>
+        <%# <div class="card_style col-12 col-md-6 offset-lg-3">
+            <% bookmark = Bookmark.find_by(list: @list, offer: offer) %>
+          <%# <div class="card__thumb">
+            <a href="#">
+                  <%= image_tag offer.poster_url, alt: "offer.title" %>
+            <%# </a>
+          </div>
+          <div class="card__date">
+            <span class="card__date__day"><%= offer.rating %></span> <i class="fas fa-star"></i>
+          <%# </div>
+          <div class="end">
+            <div class="card__body">
+              <div class="card__category"><a href="#"><%= @list.name %></a></div>
+              <%# <h2 class="card__title"><a href="#"><%= offer.title %></a></h2>
+              <%# <p class="card__description"><%= offer.overview %>
+              <%# </p> %>
+            <%# </div>
+            <div class="card__footer">
+              <div class="comment"> %>
+                <%# <i class="fas fa-quote-left mr-2"></i>
+                <small><%= bookmark.comment %></small> 
+                <%# <i class="fas fa-quote-right mr-2"></i>
+              </div>  %> %> %> %>
+              <%# <div class="center"> %> %>
+                <%# <%= link_to bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure you want to remove #{offer.title} from your #{@list.name} list"} do %>
+                  <%# <i class="fas fa-trash-alt"></i>
+                <% end %>
+              <%# </div>
+            </div> %>
+          <%# </div>
+        </div> %> %>
+          <%# <% end %> %>
+    <%# </article>  %> %> %> %> %> %>
+   </div>
+</div>
+</div>

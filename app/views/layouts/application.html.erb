@@ -12,6 +12,19 @@
   </head>
 
   <body>
+    
+   
+
     <%= yield %>
+    
+    <footer>
+      <ul class="social" id="social">
+        <li class="fb"><a href="https://fr-fr.facebook.com/"><%= icon('fab', 'facebook') %></a></li>
+        <li class="insta"><a href="https://twitter.com/?lang=fr"><%= icon('fab', 'instagram') %></a></li>
+        <li class="twitter"><a href="https://www.instagram.com/?hl=fr"><%= icon('fab', 'twitter') %></a></li>
+        <li class="snap"><a href="https://www.snapchat.com/l/fr-fr/download"><%= icon('fab', 'snapchat') %></a></li>
+      </ul>
+      <p class="copyright"><%= icon('fas', 'copyright') %> Copyright by Vims</p>
+    </footer>
   </body>
 </html>
