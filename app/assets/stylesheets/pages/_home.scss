@@ -7,33 +7,7 @@
     box-shadow: 10;
     box-shadow: -3px 25px 20px 4px rgba(73, 73, 73, 0.28);
 }
-.navbar{
-    padding-top: 50px;
-}
-.navbar img{
-    border-radius: 50%;
-    background-color: linear-gradient(rgba(53, 53, 53, 0.4), rgba(126, 126, 126, 0.4));
-    height: 40px;
-    width: 40px;
-    margin-right: 40px;
-    box-shadow: inset 4px 4px 15px 0px rgb(205, 180, 99);
-    box-shadow: 5px 5px 5px 0px rgb(3, 3, 2);
-    opacity: .6;
-}
-#logo{
-    height: 80px;
-    width: 120px;
-    opacity: .8;
-}
-.navbar-lewagon {
-    // [...]
-    background-color: transparent;
-    transition: 0.5s background-color ease;
-  }
-  
-  .navbar-lewagon-white {
-    background-color: white;
-  }
+
   .home-banner {
     background-size: cover;
     height: 100vh;
