@@ -9,17 +9,3 @@ require 'faker'
   )
   offer.save!
 end
-
-user = User.new(
-  email: "admin@admin.com",
-  password: "123456",
-  password_confirmation: "123456"
-)
-user.save!
-
-user2 = User.new(
-  email: "passepartout@gmail.com",
-  password: "123456",
-  password_confirmation: "123456"
-)
-user2.save!
