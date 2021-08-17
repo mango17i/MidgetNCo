@@ -1,12 +1,13 @@
 require 'faker'
 
 15.times do
-  Offer.new({
-              title: Faker::FunnyName.name,
-              description: Faker::Lorem.sentence(word_count: 10),
-              price: rand(20..100),
-              user_id: rand(1..3)
-            })
+  offer = Offer.new(
+    title: Faker::FunnyName.name,
+    description: Faker::Lorem.sentence(word_count: 10),
+    price: rand(20..100),
+    user_id: rand(1..2)
+  )
+  offer.save!
 end
 
 user = User.new(
