@@ -7,5 +7,5 @@ require 'faker'
     price: rand(20..100),
     user_id: rand(1..2)
   )
-  offer.save!
+  offer.save
 end
