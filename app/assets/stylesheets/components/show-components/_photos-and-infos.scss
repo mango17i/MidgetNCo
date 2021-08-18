@@ -1,7 +1,7 @@
 .photos-and-infos {
   display: flex;
   max-height: 450px;
-  width: 700px;
+  width: 80%;
   margin: 0 auto;
   img {
     width: 25vw;
@@ -10,7 +10,6 @@
     border-radius: 4px;
   }
 }
-
 
 .img-show {
   width: 25vw;
@@ -28,14 +27,19 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  border: 1px solid black;
+  border: 1px dotted black;
+}
+
+.description-show {
+  height: 90%;
 }
 
 .book-show {
-  align-self: flex-end;
+  display: flex;
+  align-self: center;
   justify-self: flex-end;
-  text-align: center;
-  border: 1px solid black;
+  padding: 16px 14px;
+  margin-bottom: 8px;
   border-radius: 4px;
   background-color: #7FC8A9;
 }
