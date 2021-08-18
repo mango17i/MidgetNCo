@@ -9,7 +9,7 @@ class ReservationsController < ApplicationController
     @offer = Offer.find(params[:offer_id])
     @reservation.offer_id = @offer.id
     @reservation.user_id = current_user.id
-raise
+
     if @reservation.save!
       redirect_to offer_path(params[:offer_id])
     else
