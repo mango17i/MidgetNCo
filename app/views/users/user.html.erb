@@ -1,0 +1,6 @@
+<%= simple_form_for @user do |f| %>
+  <%= f.input :name, label: "user's name:", error: 'name is mandatory, enter one please' %>
+  <%= f.input :description, label: "User's description" %>
+  <%= f.input :photo, as: :file %>
+  <%= f.submit %>
+<% end %>
