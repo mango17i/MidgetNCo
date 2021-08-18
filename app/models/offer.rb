@@ -1,6 +1,7 @@
 class Offer < ApplicationRecord
   belongs_to :user
   has_many :reservations
+  has_many_attached :photo
 
   # validates :title, length: { minimum: 8, maximum: 20 }
   # validates :description, length: { maximum: 140 }
