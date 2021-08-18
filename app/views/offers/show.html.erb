@@ -1,20 +1,28 @@
-<div class="banner-title-show">
-  <h2><%= @offer.title %></h2>
-</div>
-
 <div>
-  <div><% @offer.photos.each do |photo| %>
-    <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-  <% end %>
+  <div class="banner-title-show">
+    <h2><%= @offer.title %></h2>
   </div>
-  <div>
-    <p></p>
-  </div>
-</div>
 
-<div>
-  <div>
-    <%= @offer.description %>
+  <div class="photos-and-infos">
+    <img src="https://source.unsplash.com/random" alt="">
+
+    <div class="img-container-show">
+      <img class="img-show" src="https://source.unsplash.com/random" alt="">
+      <img class="img-show" src="https://source.unsplash.com/random" alt="">
+    </div>
+
+
+    <div class="description-and-book">
+      <div class="description-show">
+        <%= @offer.description %>
+      </div>
+
+      <div class="book-show">
+        <%= link_to "Book This Midget !", new_offer_reservation_path(@offer) %>
+      </div>
+
+    </div>
+
   </div>
-  <div><%= link_to "Book This Midget !", new_offer_reservation_path(@offer) %></div>
+
 </div>
