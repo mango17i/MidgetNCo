@@ -10,12 +10,12 @@
     </div>
     <div class="description-and-book">
       <div class="description-show">
-        <p><%= @offer.description %></p>
-        <span><%= @offer.price %> DogeCoins</span>
-        <p><%= @offer.user.email %></p>
+        <p>Description of the offer : <%= @offer.description %></p>
+        <p>Midget mail : <%= @offer.user.email %></p>
+        <span class="pt-3 pb-3 pr-1"><%= @offer.price %> DogeCoins</span>
       </div>
       <%= link_to new_offer_reservation_path(@offer), class: "link-book"  do %>
-        <div class="book-show">
+        <div class="book-show mt-5">
           <p>Book This Midget !</p>
         </div>
       <% end %>
