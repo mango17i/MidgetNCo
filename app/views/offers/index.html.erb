@@ -1,7 +1,7 @@
 <div class="page-container">
 <div class="filter-container">
   <div class="filters">
-    <%= link_to "Create new offer", user_signed_in? ? new_offer_path : new_user_registration_path %>
+    <%= link_to "Create new offer", user_signed_in? ? new_offer_path : new_user_registration_path, class: "text-decoration-none btn btn-success mb-4" %>
     <p>Activity</p>
     <p>Price range</p>
     <p>Deplacement</p>
@@ -17,7 +17,7 @@
           <h4><%= offer.title %></h4>
           <p class="offer-description"><%= offer.description %></p>
           <p class="card-price"><%= offer.price %> DogeCoin</p>
-          <p><%= link_to 'En Savoir Plus', offer %></P>
+          <p><%= link_to 'Book The Midget !', offer, class: "text-decoration-none btn btn-success"%></P>
         </div>
       </div>
     <% end %>

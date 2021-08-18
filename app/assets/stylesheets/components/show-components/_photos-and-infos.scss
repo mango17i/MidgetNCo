@@ -14,7 +14,7 @@
 .img-show {
   width: 25vw;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   height: 50%;
   border-radius: 4px;
 
@@ -46,7 +46,11 @@
   justify-self: flex-end;
   margin-bottom: 8px;
   border-radius: 4px;
-  background-color: #7FC8A9;
+  background-color: #afc97e ;
+    &:hover {
+      color: #F3EAF4;
+      background-color: #034732;
+    }
 }
 
 .link-book {
