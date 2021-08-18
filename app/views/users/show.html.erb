@@ -1,0 +1,16 @@
+
+<h1>Hello here are your offers : </h1>
+
+<%= @offers.each do |offer| %>
+  <%= offer.title %>
+  <%= offer.description %>
+  <%= offer.price %>
+<% end %>
+<hr>
+<h2>Here are your reservations :</h2>
+
+<%= @reservations.each do |reserv| %>
+  <%= reserv.specs %>
+  <%= reserv.start_date %>
+  <%= reserv.end_date %>
+<% end %>
