@@ -27,13 +27,16 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  border: 1px dotted black;
 }
 
 .description-show {
-  height: 90%;
+  display: flex;
+  flex-direction: column;
     p:first-child {
       font-size: 18px;
+    }
+    span {
+      align-self: flex-end;
     }
 }
 

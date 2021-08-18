@@ -11,7 +11,7 @@
     <div class="description-and-book">
       <div class="description-show">
         <p><%= @offer.description %></p>
-        <span><%= @offer.price %></span>
+        <span><%= @offer.price %> DogeCoins</span>
         <p><%= @offer.user.email %></p>
       </div>
       <%= link_to new_offer_reservation_path(@offer), class: "link-book"  do %>
