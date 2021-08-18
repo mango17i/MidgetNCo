@@ -1,0 +1,41 @@
+.photos-and-infos {
+  display: flex;
+  max-height: 450px;
+  width: 700px;
+  margin: 0 auto;
+  img {
+    width: 25vw;
+    margin-right: 8px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+}
+
+
+.img-show {
+  width: 25vw;
+  display: block;
+  object-fit: cover;
+  height: 50%;
+  border-radius: 4px;
+
+  &:first-child {
+    padding-bottom: 8px;
+  }
+}
+
+.description-and-book {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 1px solid black;
+}
+
+.book-show {
+  align-self: flex-end;
+  justify-self: flex-end;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #7FC8A9;
+}
