@@ -2,29 +2,23 @@
   <div class="banner-title-show">
     <h2><%= @offer.title %></h2>
   </div>
-
   <div class="photos-and-infos">
     <img src="https://source.unsplash.com/random" alt="">
-
     <div class="img-container-show">
       <img class="img-show" src="https://source.unsplash.com/random" alt="">
       <img class="img-show" src="https://source.unsplash.com/random" alt="">
     </div>
-
-
     <div class="description-and-book">
       <div class="description-show">
-        <%= @offer.description %>
-        <%= @offer.price %>
-        <%= @offer.user.email %>
+        <p><%= @offer.description %></p>
+        <span><%= @offer.price %></span>
+        <p><%= @offer.user.email %></p>
       </div>
-
-      <div class="book-show">
-        <%= link_to "Book This Midget !", new_offer_reservation_path(@offer) %>
-      </div>
-
+      <%= link_to new_offer_reservation_path(@offer), class: "link-book"  do %>
+        <div class="book-show">
+          <p>Book This Midget !</p>
+        </div>
+      <% end %>
     </div>
-
   </div>
-
 </div>
