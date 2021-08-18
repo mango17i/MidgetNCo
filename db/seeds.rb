@@ -5,7 +5,7 @@ require 'faker'
     title: Faker::FunnyName.name,
     description: Faker::Lorem.sentence(word_count: 10),
     price: rand(20..100),
-    user: 1
+    user_id: 1
   )
   offer.save
 end
