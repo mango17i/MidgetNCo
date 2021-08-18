@@ -2,6 +2,8 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
-@import "card-index";
+@import "./index-components/card-index";
 @import "footer";
-@import "filter-card";
+@import "./index-components/filter-card";
+@import "./show-components/banner-title";
+@import "./show-components/photos-and-infos";
