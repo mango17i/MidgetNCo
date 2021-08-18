@@ -1,16 +1,21 @@
-
 <h1>Hello here are your offers : </h1>
-
-<%= @offers.each do |offer| %>
-  <%= offer.title %>
-  <%= offer.description %>
-  <%= offer.price %>
-<% end %>
+  <div class="offer-user-show">
+  <% @offers.each_with_index do |offer, index| %>
+    <p><%= index + 1 %></p>
+    <p><%= offer.title %></p>
+    <p><%= offer.description %></p>
+    <p><%= offer.price %> DogeCoin</p>
+  <% end %>
+  </div>
 <hr>
 <h2>Here are your reservations :</h2>
-
-<%= @reservations.each do |reserv| %>
-  <%= reserv.specs %>
-  <%= reserv.start_date %>
-  <%= reserv.end_date %>
-<% end %>
+<div>
+  <div class="reservation-user-show">
+  <% @reservations.each_with_index do |reserv, index| %>
+    <p><%= index + 1%></p>
+    <p><%= reserv.specs %></p>
+    <p><%= reserv.start_date %></p>
+    <p><%= reserv.end_date %></p>
+  <% end %>
+  </div>
+</div>
