@@ -2,18 +2,20 @@
 
 <div class="container">
   <% @offers.each_with_index do |offer, index| %>
-    <div class="card-product">
-      <div class="card-pic">
+    <div class="offer-card">
+      <div class="offer-card-pic">
         <img src="https://source.unsplash.com/random" alt="">
       </div>
-      <div class="card-infos">
+      <div class="offer-card-infos">
         <h2><%= offer.title %></h2>
         <p><%= offer.description %></p>
-        <p><%= offer.price %> DogeCoin</p>
-        <div class="card-modif">
-          delete button
-          edit btn
+        <div class="offer-card-price">
+          <p><%= offer.price %> DogeCoin</p>
         </div>
+      </div>
+      <div class="offer-card-modif">
+          <%= link_to "Edit Offer", edit_offer_path(offer.id), class: "btn btn-success btn-offer"  %>
+          <%= link_to "Delete Offer", offer_path(offer.id), method: :delete, data: { confirm: "Are you sure ?" }, class: "btn btn-success btn-offer" %>
       </div>
     </div>
   <% end %>
