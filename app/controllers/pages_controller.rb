@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def home
     @offers = Offer.all
-    @markers = @offers.geocoded.map do |offer|
+    @markers = @offers.map do |offer|
       {
         lat: offer.latitude,
         lng: offer.longitude,
