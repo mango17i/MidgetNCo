@@ -1,12 +1,44 @@
 <div class="page-container">
-<div class="filter-container">
-  <div class="filters">
-    <p>Activity</p>
-    <p>Price range</p>
-    <p>Deplacement</p>
-    <p>calendar</p>
-    <p>submit</p>
-  </div>
+  <div class="filter-container">
+    <div class="filters col-10 col-md-4 offset-lg-3">
+        <div class="card_item bg-grey rounded p-3">
+          <form action="" method="get" class="form-example">
+          <fieldset for="midget_activity">
+          <legend>Search your Midget</legend>
+            <div class="form-example">  
+              <label for="name">For which occasion: </label>
+                <select name="midget_activity" id="pays">
+                  <option value="Birthday">Birthday</option>
+                  <option value="life_party">Life party</option>
+                  <option value="event">Event</option>
+                  <option value="coktail">Coktail</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="mitzvah">Bar Mitzvah</option>
+                  <option value="trade">Trade fair</option>
+                  <option value="company">Company</option>
+                </select>
+            </div>           
+            <div class="form-example">
+              <input type="range" name="Price" id="price" min="0" max="500" required>
+              <label for="email">Range price</label>
+            </div>
+            <div class="form-example">
+              <input type="search" id="search_city" name="search_city">
+              <label for="search_city">Where?</label>
+            </div>
+            <div class="form-example">
+              <label for="start"> From: </label>
+              <input type="date" id="start" name="activity_start">
+              <label for="end"> to: </label>
+              <input type="date" id="end" name="activity_end">
+            </div>
+            <div class="form-example">
+              <input type="submit" value="Search" class="btn_search">
+            </div>
+            </fieldset>
+          </form>
+        </div>
+    </div>
   </div>
   <div class="card-container">
     <% @offers.each do |offer| %>
