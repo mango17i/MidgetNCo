@@ -1,7 +1,7 @@
 <h1>Hello here are your offers : </h1>
 
 <div class="container">
-  <% @offers.each_with_index do |offer, index| %>
+  <% @offers.each do |offer| %>
     <div class="offer-card">
       <div class="offer-card-pic">
         <img src="https://source.unsplash.com/random" alt="">
@@ -27,12 +27,21 @@
 
   <h2>Here are your reservations :</h2>
 
-  <div class="card-product">
-      <% @reservations.each_with_index do |reserv, index| %>
-      <p><%= index + 1%></p>
-      <p><%= reserv.specs %></p>
-      <p><%= reserv.start_date %></p>
-      <p><%= reserv.end_date %></p>
-    <% end %>
-  </div>
+  <% @reservations.each do |reserv| %>
+    <div class="reserv-card">
+      <div class="reserv-card-pic">
+        <img src="https://source.unsplash.com/random" alt="">
+      </div>
+      <div class="reserv-card-infos">
+        <h2><%= reserv.offer.title %></h2>
+        <p><%= reserv.specs %></p>
+        <p><%= reserv.start_date %></p>
+        <p><%= reserv.end_date %></p>
+      </div>
+      <div class="reserv-card-modif">
+          <%= link_to "Edit reservation", edit_offer_reservation_path(reserv.offer.id, reserv.id), class: "btn btn-success btn-reserv"  %>
+          <%= link_to "Delete Reservation", offer_reservation_path(reserv.offer.id, reserv.id), method: :delete, data: { confirm: "Are you sure ?" }, class: "btn btn-success btn-offer" %>
+      </div>
+    </div>
+  <% end %>
 </div>
