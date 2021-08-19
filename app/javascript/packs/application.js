@@ -26,6 +26,7 @@ require("channels")
 import "bootstrap";
 import { initUpdateNavbarOnScroll } from './navbar';
 import { initFlatpickr } from "../plugins/flatpickr";
+import { initMapbox } from '../plugins/init_mapbox';
 
 
 // Internal imports, e.g:
@@ -37,3 +38,7 @@ document.addEventListener('turbolinks:load', () => {
   initFlatpickr();
   initUpdateNavbarOnScroll();
 });
+
+document.addEventListener('turbolinks:load', () => {
+  initMapbox();
+})
