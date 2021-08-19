@@ -6,7 +6,8 @@ class OffersController < ApplicationController
     @markers = @offers.geocoded.map do |offer|
       {
         lat: offer.latitude,
-        lng: offer.longitude
+        lng: offer.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { offer: offer })
       }
     end
   end
@@ -32,11 +33,16 @@ class OffersController < ApplicationController
   end
 
   def update
-    @offer.update(params[:offer])
+    @offer.title = params['offer']['title']
+    @offer.description = params['offer']['description']
+    @offer.price = params['offer']['price']
+    @offer.save!
+    redirect_to user_path(current_user.id)
   end
 
   def destroy
     @offer.destroy
+    redirect_to user_path(current_user.id)
   end
 
   private

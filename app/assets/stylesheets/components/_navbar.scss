@@ -36,12 +36,10 @@
 .navbar img {
   border-radius: 50%;
   background-color: linear-gradient(rgba(53, 53, 53, 0.4), rgba(126, 126, 126, 0.4));
-  height: 40px;
-  width: 40px;
-  margin: 0 30px;
-  box-shadow: inset 4px 4px 15px 0px rgb(205, 180, 99);
-  box-shadow: 5px 5px 5px 0px rgb(3, 3, 2);
-  opacity: .6;
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  margin-right: 10px;
 }
 
 #logo {
@@ -81,6 +79,7 @@
 }
 
 .navbar-expand-sm .navbar-nav .dropdown-menu {
+  opacity: 1;
   top: 50px;
   right: 10px;
 }
