@@ -25,7 +25,7 @@
             <%= link_to "Choose your Midget", offers_path, class: "btn btn-success m-1" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Create new offer", user_signed_in? ? new_offer_path : new_user_registration_path, class: "m-1 text-decoration-none btn btn-success" %>
+            <%= link_to "Create new offer", new_offer_path, class: "m-1 text-decoration-none btn btn-success" %>
           </li>
           <li class="nav-item">
             <%= link_to "Userpage", user_path(current_user.id), class: "btn btn-success pull-right m-1" %>
