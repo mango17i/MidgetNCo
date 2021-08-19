@@ -33,11 +33,16 @@ class OffersController < ApplicationController
   end
 
   def update
-    @offer.update(params[:offer])
+    @offer.title = params['offer']['title']
+    @offer.description = params['offer']['description']
+    @offer.price = params['offer']['price']
+    @offer.save!
+    redirect_to user_path(current_user.id)
   end
 
   def destroy
     @offer.destroy
+    redirect_to user_path(current_user.id)
   end
 
   private
