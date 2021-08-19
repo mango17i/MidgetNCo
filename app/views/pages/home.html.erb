@@ -38,42 +38,6 @@
                 style="width: 100%; height: 600px;"
                 data-markers="<%= @markers.to_json %>"
                 data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
-<!--
-                <article class="row">
-                    <%# @list.movies.each do |movie| %>
-                        <div class="card_style col-12 col-md-6 offset-lg-3">
-                            <%# bookmark = Bookmark.find_by(list: @list, movie: movie) %>
-                                <div class="card__thumb">
-                                    <a href="#">
-                                        <%#= image_tag movie.poster_url, alt: "movie.title" %>
-                                    </a>
-                                </div>
-                                <div class="card__date">
-                                    <span class="card__date__day"><%#= movie.rating %></span> <i class="fas fa-star"></i>
-                                </div>
-                                <div class="end">
-                                    <div class="card__body">
-                                        <div class="card__category"><a href="#"><%#= @list.name %></a></div>
-                                        <h2 class="card__title"><a href="#"><%#= movie.title %></a></h2>
-                                        <p class="card__description"><%#= movie.overview %></p>
-                                </div>
-                                <div class="card__footer">
-                                <div class="comment">
-                                    <i class="fas fa-quote-left mr-2"></i>
-                                    <small><%#= bookmark.comment %></small>
-                                    <i class="fas fa-quote-right mr-2"></i>
-                                </div>
-                                <div class="center">
-                                    <%#= link_to bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"} do %>
-                                    <i class="fas fa-trash-alt"></i>
-                    <%# end %>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <%# end %>
-                </article>
-                -->
             </div>
         </div>
     </div>

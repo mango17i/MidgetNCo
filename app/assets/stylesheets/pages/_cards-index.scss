@@ -1,5 +1,6 @@
 .page-container {
   display: flex;
   position: relative;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-around;
 }
