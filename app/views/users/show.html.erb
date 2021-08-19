@@ -1,21 +1,36 @@
 <h1>Hello here are your offers : </h1>
 
-<div class="card-product">
-    <% @offers.each_with_index do |offer, index| %>
-    <p><%= index + 1 %></p>
-    <p><%= offer.title %></p>
-    <p><%= offer.description %></p>
-    <p><%= offer.price %> DogeCoin</p>
+<div class="container">
+  <% @offers.each_with_index do |offer, index| %>
+    <div class="card-product">
+      <div class="card-pic">
+        <img src="https://source.unsplash.com/random" alt="">
+      </div>
+      <div class="card-infos">
+        <h2><%= offer.title %></h2>
+        <p><%= offer.description %></p>
+        <p><%= offer.price %> DogeCoin</p>
+        <div class="card-modif">
+          delete button
+          edit btn
+        </div>
+      </div>
+    </div>
   <% end %>
-</div>
-<hr>
-<h2>Here are your reservations :</h2>
 
-<div class="card-product">
-    <% @reservations.each_with_index do |reserv, index| %>
-    <p><%= index + 1%></p>
-    <p><%= reserv.specs %></p>
-    <p><%= reserv.start_date %></p>
-    <p><%= reserv.end_date %></p>
-  <% end %>
+<p>
+
+  <hr>
+
+
+  <h2>Here are your reservations :</h2>
+
+  <div class="card-product">
+      <% @reservations.each_with_index do |reserv, index| %>
+      <p><%= index + 1%></p>
+      <p><%= reserv.specs %></p>
+      <p><%= reserv.start_date %></p>
+      <p><%= reserv.end_date %></p>
+    <% end %>
+  </div>
 </div>
