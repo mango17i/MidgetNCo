@@ -6,8 +6,9 @@ class Offer < ApplicationRecord
   after_validation :geocode, if: :will_save_change_to_address?
 
   # validates :title, length: { minimum: 8, maximum: 20 }
-  validates :description, length: { minimum: 50 }
+  validates :description, length: { minimum: 30 }
   validates :title, presence: true, uniqueness: true
   validates :description, presence: true
   validates :price, presence: true
+  validates :address, presence: true
 end
