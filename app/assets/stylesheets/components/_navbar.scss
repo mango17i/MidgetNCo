@@ -1,41 +1,47 @@
-.navbar{
+.navbar {
   position: sticky;
   padding-top: 50px;
   top: 2px;
+  z-index: 10;
 }
+
 .navbar-lewagon {
   justify-content: space-between;
-  padding: 10px 50px 0 50px;
+  padding: 10px 0;
   background: transparent;
   text-shadow: 10px 10px 50px white;
   background-color: transparent;
   transition: 0.5s background-color ease;
 }
-.dropdown-menu{
-    opacity: .8;
-    border-radius: 8px;
+
+.dropdown-menu {
+  opacity: .8;
+  border-radius: 8px;
 }
-.navbar-lewagon a:hover{
-    font-weight: 900;
-    color: white;
-    text-shadow: 20px 20px 70px white;
+
+.navbar-lewagon a:hover {
+  font-weight: 900;
+  color: white;
+  text-shadow: 20px 20px 70px white;
 }
-.navbar-lewagon img:hover{
+
+.navbar-lewagon img:hover {
   box-shadow: 20px 20px 70px white;
 
 }
 
-.navbar img{
+.navbar img {
   border-radius: 50%;
   background-color: linear-gradient(rgba(53, 53, 53, 0.4), rgba(126, 126, 126, 0.4));
   height: 40px;
   width: 40px;
-  margin-right: 40px;
+  margin: 0 30px;
   box-shadow: inset 4px 4px 15px 0px rgb(205, 180, 99);
   box-shadow: 5px 5px 5px 0px rgb(3, 3, 2);
   opacity: .6;
 }
-#logo{
+
+#logo {
   height: 80px;
   width: 120px;
   opacity: .8;
@@ -44,6 +50,7 @@
 .navbar-lewagon-white {
   background-color: white;
 }
+
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
@@ -55,7 +62,7 @@
   box-shadow: none;
 }
 
-#burger-menu{
+#burger-menu {
   border-radius: 50%;
   background: transparent;
   text-align: center;
@@ -65,7 +72,12 @@
   padding: 0px;
   background-color: rgba(255, 255, 255, .3);
 }
-#burger-menu:hover{
-  box-shadow: 0 10px 30px rgba(247, 247, 247, 0.5);
 
+#burger-menu:hover {
+  box-shadow: 0 10px 30px rgba(247, 247, 247, 0.5);
+}
+
+.navbar-expand-sm .navbar-nav .dropdown-menu {
+  top: 50px;
+  right: 10px;
 }
