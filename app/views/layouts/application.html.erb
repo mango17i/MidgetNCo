@@ -23,34 +23,37 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-
-
           <% if user_signed_in? %>
             <li class="nav-item">
               <%= link_to "Choose your Midget", offers_path, class: "btn btn-success m-1" %>
             </li>
-          <% end %>
-
-          <li class="nav-item dropdown">
-            <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://i.ibb.co/f02mmVY/145783068-248787803321565-2439862427518682230-n.png" />
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <%= link_to "Userpage", user_path(current_user.id), class: "dropdown-item" %>
-              <%= link_to "Create new offer", user_signed_in? ? new_offer_path : new_user_registration_path, class: "dropdown-item" %>
-              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-            </div>
+            <li class="nav-item dropdown">
+              <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://i.ibb.co/f02mmVY/145783068-248787803321565-2439862427518682230-n.png" />
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <%= link_to "Userpage", user_path(current_user.id), class: "dropdown-item" %>
+                <%= link_to "Create new offer", user_signed_in? ? new_offer_path : new_user_registration_path, class: "dropdown-item" %>
+                <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+              </div>
+            </li>
+          </ul>
+        <% else %>
+          <li>
+            <%= link_to "Log in", user_session_path, class: "btn btn-success m-1" %>
           </li>
-        </ul>
-      </div>
+          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-success m-1" %>
+        </li>
+      <% end %>
     </div>
-    <%= yield %>
-    <footer>
-      <ul class="social" id="social">
-        <li class="fb"><a href="https://fr-fr.facebook.com/"><%= icon('fab', 'facebook') %></a></li>
-        <li class="insta"><a href="https://twitter.com/?lang=fr"><%= icon('fab', 'instagram') %></a></li>
-        <li class="twitter"><a href="https://www.instagram.com/?hl=fr"><%= icon('fab', 'twitter') %></a></li>
-        <li class="snap"><a href="https://www.snapchat.com/l/fr-fr/download"><%= icon('fab', 'snapchat') %></a></li>
-      </ul>
-      <p class="copyright"><%= icon('fas', 'copyright') %> Copyright by Vims</p>
-    </footer>
-  </body>
+  </div>
+  <%= yield %>
+  <footer>
+    <ul class="social" id="social">
+      <li class="fb"><a href="https://fr-fr.facebook.com/"><%= icon('fab', 'facebook') %></a></li>
+      <li class="insta"><a href="https://twitter.com/?lang=fr"><%= icon('fab', 'instagram') %></a></li>
+      <li class="twitter"><a href="https://www.instagram.com/?hl=fr"><%= icon('fab', 'twitter') %></a></li>
+      <li class="snap"><a href="https://www.snapchat.com/l/fr-fr/download"><%= icon('fab', 'snapchat') %></a></li>
+    </ul>
+    <p class="copyright"><%= icon('fas', 'copyright') %> Copyright by Vims</p>
+  </footer>
+</body>
 </html>
