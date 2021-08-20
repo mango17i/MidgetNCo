@@ -1,13 +1,13 @@
-<h1>Hello here are your offers : </h1>
 
-<div class="container">
+<div class="container_card_offer">
+  <h2>Hello here are your offers : </h2>
   <% @offers.each do |offer| %>
     <div class="offer-card">
       <div class="offer-card-pic">
         <img src="https://source.unsplash.com/random" alt="">
       </div>
       <div class="offer-card-infos">
-        <h2><%= offer.title %></h2>
+        <h3><%= offer.title %></h3>
         <p><%= offer.description %></p>
         <div class="offer-card-price">
           <p><%= offer.price %> DogeCoin</p>
@@ -15,32 +15,26 @@
       </div>
       <div class="offer-card-modif">
           <%= link_to "Edit Offer", edit_offer_path(offer.id), class: "btn btn-success btn-offer"  %>
-          <%= link_to "Delete Offer", offer_path(offer.id), method: :delete, data: { confirm: "Are you sure ?" }, class: "btn btn-success btn-offer" %>
+          <%= link_to "Delete Offer", offer_path(offer.id), method: :delete, data: { confirm: "Are you sure ?" }, class: "btn btn-success btn-offer delete_btn" %>
       </div>
     </div>
   <% end %>
 
-<p>
-
-  <hr>
-
-
   <h2>Here are your reservations :</h2>
-
   <% @reservations.each do |reserv| %>
-    <div class="reserv-card">
-      <div class="reserv-card-pic">
+    <div class="offer-card">
+      <div class="offer-card-pic">
         <img src="https://source.unsplash.com/random" alt="">
       </div>
-      <div class="reserv-card-infos">
-        <h2><%= reserv.offer.title %></h2>
+      <div class="offer-card-infos">
+        <h3><%= reserv.offer.title %></h3>
         <p><%= reserv.specs %></p>
         <p><%= reserv.start_date %></p>
         <p><%= reserv.end_date %></p>
       </div>
-      <div class="reserv-card-modif">
-          <%= link_to "Edit reservation", edit_offer_reservation_path(reserv.offer.id, reserv.id), class: "btn btn-success btn-reserv"  %>
-          <%= link_to "Delete Reservation", offer_reservation_path(reserv.offer.id, reserv.id), method: :delete, data: { confirm: "Are you sure ?" }, class: "btn btn-success btn-offer" %>
+      <div class="offer-card-modif">
+          <%= link_to "Edit reservation", edit_offer_reservation_path(reserv.offer.id, reserv.id), class: "btn btn-success btn-offer"  %>
+          <%= link_to "Delete Reservation", offer_reservation_path(reserv.offer.id, reserv.id), method: :delete, data: { confirm: "Are you sure ?" }, class: "btn btn-success btn-offer delete_btn" %>
       </div>
     </div>
   <% end %>
