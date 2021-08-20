@@ -1,7 +1,7 @@
 .navbar {
   position: sticky;
+  top: 1px;
   padding-top: 50px;
-  top: 2px;
   z-index: 10;
   background-color:linear-gradient(rgba(53, 53, 53, 0.4)), rgb(172, 172, 172);
   border-radius: 0 0 8px 8px;
@@ -10,7 +10,7 @@
 
 .navbar-lewagon {
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 1px 0;
   background: transparent;
   text-shadow: 10px 10px 50px #F3EAF4;
   background-color: transparent;
@@ -43,13 +43,13 @@
 }
 
 #logo {
-  height: 40px;
+  height: 60px;
   width: 60px;
-  opacity: .8;
+  opacity: 1;
 }
 
 .navbar-lewagon-white {
-  background-color: #F3EAF4;
+  background-color: rgba(131, 77, 29, 0.685);
 }
 
 .navbar-lewagon .navbar-collapse {

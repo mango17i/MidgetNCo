@@ -4,7 +4,8 @@
   flex-wrap: nowrap;
   background-image: linear-gradient( rgba(3, 71, 50, .7), rgba(175, 201, 126,.7));
   background-size: contain;
-
+  height: auto;
+  align-items: start;
   justify-content: space-around;
 }
 .card-container{
@@ -14,7 +15,6 @@
 }
 .card{
   width: 300px;
-  height: 350px;
   display: flex;
   background-color: #F3EAF4;
   box-shadow:0 10px 30px rgba(255, 255, 255, .5);
@@ -37,7 +37,6 @@
   height: 45%;
   margin: 0;
   padding: 10px;
-  text-align: justify;
 }
 .card-price{
   font-size: 12px;
@@ -54,4 +53,3 @@
   border-radius: 5px;
   padding: 8px 5px;
 }
-

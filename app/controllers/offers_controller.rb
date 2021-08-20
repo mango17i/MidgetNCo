@@ -3,6 +3,11 @@ class OffersController < ApplicationController
 
   def index
     @offers = Offer.all
+    if params[:query].present?
+      @offers = Offer.where("title ILIKE ?", "%#{params[:query]}%")
+    else
+      @offers = Offer.all
+    end
     @markers = @offers.geocoded.map do |offer|
       {
         lat: offer.latitude,
@@ -36,6 +41,7 @@ class OffersController < ApplicationController
     @offer.title = params['offer']['title']
     @offer.description = params['offer']['description']
     @offer.price = params['offer']['price']
+    @offer.address = params['offer']['address']
     @offer.save!
     redirect_to user_path(current_user.id)
   end

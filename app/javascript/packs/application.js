@@ -28,6 +28,7 @@ import { initUpdateNavbarOnScroll } from './navbar';
 import { initFlatpickr } from "../plugins/flatpickr";
 import { initMapbox } from '../plugins/init_mapbox';
 import {getVals} from './range_price'
+import {tabs} from './tabs'
 
 
 // Internal imports, e.g:
@@ -39,5 +40,6 @@ document.addEventListener('turbolinks:load', () => {
   initFlatpickr();
   initUpdateNavbarOnScroll();
   initMapbox();
+  tabs();
   getVals();
 });

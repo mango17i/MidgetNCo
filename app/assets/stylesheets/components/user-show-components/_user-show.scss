@@ -1,12 +1,13 @@
 .container_card_offer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   padding: 8px;
   align-items: center;
   width: 100%;
   background-image: linear-gradient(rgba(3, 71, 50,.7), rgba(175, 201, 126, .7));
   background-size: contain ;
+  min-height: 800px;
+
 }
 .container_card_offer h2{
 font-size: 3rem;
@@ -16,57 +17,48 @@ color: #F3EAF4;
 
 }
 
+.tab_contents {
+  display: none;
+}
+
+.tab_contents.active {
+  display: flex!important;
+}
+
 .container_card_offer h3{
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .offer-card {
-    display: flex;
-    width: 60%;
-    margin: 8px 0;
-    border-radius: 5px;
-    height: 200px;
-
-    background: #F3EAF4;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-    justify-content: space-between;
+  display: flex;
+  height: 200px;
+  background: #F3EAF4;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  margin: 8px;
+  justify-content: space-between;
+  width: 80%;
 }
 
 .offer-card-infos {
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 16px;
   padding: 8px;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 40%;
-  max-height: 98%;
+  position: relative;
+  width: 80%;
 }
-.offer-card-infos h2{
-  margin: 0 !important;
-}
-.offer-card-infos p{
-  margin: 0 !important;
-}
+
 
 
 .offer-card-price{
-  padding-left: 40%;
-  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  right: 24px;
 
 }
 .offer-card-pic {
-  width: 37%;
-  object-fit: contain;
-  overflow: hidden;
-  border-radius: 5px 0 0 5px;
-
   & img {
-    width: 100%;
+    width: 300px;
     height: 200px;
-    border-radius: 5px 0 0 5px;
-
   }
 }
 
@@ -86,34 +78,64 @@ color: #F3EAF4;
   font-size: 14px;
 }
 
+.container_card_reserv {
+  flex-direction: column;
+  padding: 8px;
+  align-items: center;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0.6)), url("http://www.premiere.fr/sites/default/files/styles/partage_rs/public/2018-04/PHOTO-Treize-Nains-sur-le-nouveau-poster-du-Hobbit.jpg");
+  background-size: contain ;
+  min-height: 800px;
+
+}
+.container_card_reserv h2{
+font-size: 3rem;
+padding: 40px;
+
+color: #F3EAF4;
+
+}
+
+.container_card_reserv h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .reserv-card {
-    display: flex;
-    height: 200px;
-    background: #F3EAF4;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-    margin: 8px;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  background: #F3EAF4;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  margin: 8px;
+  width: 80%;
 }
 
 .reserv-card-infos {
   font-size: 16px;
-  font-weight: bold;
   padding: 8px;
   position: relative;
   width: 80%;
 }
+.reserv-card-infos h2{
+  margin: 0 !important;
+}
+.reserv-card-infos p{
+  margin: 0 !important;
+}
 
+
+.reserv-card-price{
+  position: absolute;
+  bottom: 0;
+  right: 24px;
+
+}
 .reserv-card-pic {
   & img {
     width: 300px;
     height: 200px;
   }
-}
-
-.reserv-card-price {
-  position: absolute;
-  bottom: 0;
-  right: 24px;
 }
 
 .reserv-card-modif {
@@ -125,5 +147,9 @@ color: #F3EAF4;
 }
 
 .btn-reserv {
-  width: 130px;
+  width: 80%;
+  padding: 2px 5px;
+  color: #F3EAF4;
+  border-radius: 5px;
+  font-size: 14px;
 }
