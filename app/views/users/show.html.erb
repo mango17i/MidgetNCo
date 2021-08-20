@@ -1,5 +1,19 @@
+<div style='display:flex;'>
+  <div class="tab-1 active">
+    Offers
+  </div>
+  <div class="tab-2">
+    Orders
+  </div>
+  <div class="tab-3">
+    Pending Orders
+  </div>
+</div>
 
-<div class="container_card_offer">
+
+
+
+<div class="tab_contents container_card_offer active">
   <h2>Hello here are your offers : </h2>
   <% @offers.each do |offer| %>
     <div class="offer-card">
@@ -19,7 +33,9 @@
       </div>
     </div>
   <% end %>
+</div>
 
+<div class="tab_contents container_card_reserv">
   <h2>Here are your reservations :</h2>
   <% @reservations.each do |reserv| %>
     <div class="reserv-card">
