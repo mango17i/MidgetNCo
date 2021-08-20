@@ -4,7 +4,8 @@
   flex-wrap: nowrap;
   background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0.6)), url("http://www.slate.fr/sites/default/files/styles/1060x523/public/frodonvoyageinattendu.jpg");
   background-size: contain;
-
+  height: 100vh;
+  align-items: baseline;
   justify-content: space-around;
 }
 .card-container{
@@ -54,4 +55,3 @@
   border-radius: 5px;
   padding: 8px 5px;
 }
-
