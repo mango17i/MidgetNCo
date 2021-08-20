@@ -36,6 +36,7 @@ class OffersController < ApplicationController
     @offer.title = params['offer']['title']
     @offer.description = params['offer']['description']
     @offer.price = params['offer']['price']
+    @offer.address = params['offer']['address']
     @offer.save!
     redirect_to user_path(current_user.id)
   end

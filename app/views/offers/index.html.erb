@@ -1,35 +1,35 @@
 <div class="page-container">
   <div class="filter-container">
-    <form action="get" method="get" class="search_form">
-      <fieldset for="midget_activity">
-        <legend>Search your Midget</legend>
-        <div class="range_input">
-          <p>Price Range</p>
-          <div class="range-slider">
-            <span class="rangeValues"></span>
-            <input value="0" min="0" max="500" step="20" type="range">
-            <input value="500" min="20" max="500" step="20" type="range">
-          </div>
-        </div>
-        <div class="form-example date_search">
-          <label for="start"> From: </label>
-          <input type="date" id="start" name="activity_start">
-          <label for="end"> to: </label>
-          <input type="date" id="end" name="activity_end">
-        </div>
-        <div class="form_example">
-          <input type="submit" value="Search" class="btn_search">
-        </div>
-      </fieldset>
-    </form>
+          <form action="get" method="get" class="search_form">
+            <fieldset for="midget_activity">
+            <legend>Search your Midget</legend>
+              <div class="range_input">
+                <p>Price Range</p>
+                <div class="range-slider">
+                  <span class="rangeValues"></span>
+                  <input value="0" min="0" max="500" step="20" type="range">
+                  <input value="500" min="20" max="500" step="20" type="range">
+                </div>
+              </div>
+              <div class="form-example date_search">
+                <label for="start"> From: </label>
+                <input type="date" id="start" name="activity_start">
+                <label for="end"> to: </label>
+                <input type="date" id="end" name="activity_end">
+              </div>
+              <div class="form_example">
+                <input type="submit" value="Search" class="btn_search">
+              </div>
+            </fieldset>
+          </form>
   </div>
   <div class="card-container">
     <% @offers.each do |offer| %>
       <div class="card">
-        <div class="card_index">
-          <% if offer.photos.attached? %>
-            <%= cl_image_tag offer.photos[0].key%>
-          <% end %>
+      <div class="card_index">
+      <% if offer.photos.attached? %>
+        <%= cl_image_tag offer.photos[0].key%>
+        <% end %>
         </div>
         <div class="description-container">
           <h4><%= offer.title %></h4>
