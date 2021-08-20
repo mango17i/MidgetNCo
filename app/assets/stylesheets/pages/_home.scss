@@ -2,14 +2,7 @@
     list-style-type: none;
     text-shadow: .5px .5px 1px rgba(0, 0, 0, 0.3) ;
 }
-.btn{
-  color: white;
-  font-size: 700;
-  background-color: blue;
-  opacity: .8;
-  border-radius: 4px;
-  border: 0;
-}
+
 #start, #end, #offer_photo{
   color: rgba(29, 29, 29, .8);
 }
@@ -113,7 +106,7 @@ button:hover svg {
         float: right;
         width: 55%;
         height: 500px;
-        margin:0px 0 25px 40px;
+        margin:15px 15px 15px 20px;
   }
   article{
     display: flex;
