@@ -5,7 +5,7 @@
   <%= f.input :description, label: "Offer's description" %>
   <%= f.file_field :photos, multiple: true %>
   <%= f.input :price %>
-  <%= f.input :address %>
+  <%= f.input :address, id: "address-input", type: "search" %>
   <%= f.button :submit, "Create", class: "btn btn-success mt-3 px-5" %>
 <% end %>
 </div>

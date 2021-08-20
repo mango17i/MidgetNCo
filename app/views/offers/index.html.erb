@@ -3,9 +3,13 @@
           <form action="get" method="get" class="search_form">
             <fieldset for="midget_activity">
             <legend>Search your Midget</legend>
-              <div class="form-example">
-                <input type="range" name="Price" id="price" min="0" max="500" value="250" step="10" required>
-                <label for="price">Range price</label>
+              <div class="range_input">          
+                <p>Price Range</p>
+                <div class="range-slider">
+                  <span class="rangeValues"></span>
+                  <input value="0" min="0" max="500" step="20" type="range">
+                  <input value="500" min="20" max="500" step="20" type="range">
+                </div>
               </div>
               <div class="form-example date_search">
                 <label for="start"> From: </label>
@@ -22,9 +26,11 @@
   <div class="card-container">
     <% @offers.each do |offer| %>
       <div class="card">
+      <div class="card_index">
       <% if offer.photos.attached? %>
         <%= cl_image_tag offer.photos[0].key%>
         <% end %>
+        </div>
         <div class="description-container">
           <h4><%= offer.title %></h4>
           <p class="offer-description"><%= offer.description %></p>

@@ -15,7 +15,7 @@ const initMapbox = () => {
 
     const map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v10'
+      style: 'mapbox://styles/sachabojanowski/cksk7zwmudddo17qui2x7g526'
     });
     const markers = JSON.parse(mapElement.dataset.markers);
 
@@ -25,7 +25,14 @@ const initMapbox = () => {
       markers.forEach((marker) => {
         const popup = new mapboxgl.Popup().setHTML(marker.info_window);
 
-        new mapboxgl.Marker()
+        const element = document.createElement('div');
+        element.className = 'marker';
+        element.style.backgroundImage = `url('${marker.image_url}')`;
+        element.style.backgroundSize = 'contain';
+        element.style.width = '25px';
+        element.style.height = '25px';
+
+        new mapboxgl.Marker(element)
           .setLngLat([marker.lng, marker.lat])
           .setPopup(popup) // add this
           .addTo(map);

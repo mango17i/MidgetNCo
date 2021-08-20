@@ -40,5 +40,9 @@ document.addEventListener('turbolinks:load', () => {
   initFlatpickr();
   initUpdateNavbarOnScroll();
   initMapbox();
+<<<<<<< HEAD
   tabs();
+=======
+  getVals();
+>>>>>>> fd86cc7f14d8b37fcb19688612789a3bf7360d84
 });

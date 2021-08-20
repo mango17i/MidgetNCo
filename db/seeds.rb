@@ -18,17 +18,5 @@ Reservation.destroy_all
 puts 'destroying old offers'
 Offer.destroy_all
 puts 'creating offers'
-11.times do |index|
-  offer = Offer.new(
-    title: Faker::FunnyName.name,
-    description: Faker::Lorem.sentence(word_count: 20),
-    price: rand(20..100),
-    user_id: User.all.sample.id,
-    address: addresses[index]
-  )
-  offer.save!
-  puts 'one offer created'
-  puts offer.address
-end
 
 puts 'done seeding'
