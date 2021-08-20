@@ -3,17 +3,24 @@
     text-shadow: .5px .5px 1px rgba(0, 0, 0, 0.3) ;
 }
 
-#start, #end, #offer_photo{
+#start, #end, #offer_photos{
   color: rgba(29, 29, 29, .8);
 }
 ::placeholder{
   color:#000;
 }
+.btn{
+  color:#F3EAF4;
+  background-color: #034732;
+  opacity: .8;
+  border: 1px solid #AFC97E;
+}
 .btn:hover{
+  background-color: #034732;
   opacity: 1;
 }
 .btn-green{
-  background-color:rgb(135, 220, 156);
+  background-color:#AFC97E;
 }
 .home_description{
   width: 90%;
@@ -29,21 +36,21 @@
   .home-banner {
     background-size: cover;
     height: 100vh;
-    color: #eee;
+    color: #F3EAF4;
     text-align: center;
     padding-top: 30vh;
   }
   h1{
       font-size: 6rem;
-      color: rgba(192, 180, 99, .8);
-      text-shadow: 1px 1px 2px white;
+      color: #955E42;
+      text-shadow: 1px 1px 2px #F3EAF4;
   }
   button {
     width: 178px;
     height: 58px;
     cursor: pointer;
     background: transparent;
-    border: 1px solid rgb(135, 220, 191);
+    border: 1px solid #034732;
     outline: none;
     transition: 1s ease-in-out;
     position: relative;
@@ -55,24 +62,30 @@ svg {
     left: 0;
     top: 0;
     fill: none;
-    stroke: white;
+    stroke: #F3EAF4;
     stroke-dasharray: 150 480;
     stroke-dashoffset: 150;
     transition: 2s ease-in-out;
 }
+#offer_description{
+  height: 100px;
+}
 
 button:hover {
     transition: 1s ease-in-out;
-    background: rgb(135, 220, 156);
+    background: rgba(3, 71, 50, .6);
 }
 button:hover svg {
     stroke-dashoffset: -480;
   }
 
   button span {
-    color: white;
+    color: #AFC97E;
     font-size: 18px;
     font-weight: 100;
+  }
+  button span:hover{
+    color: #034732!important;
   }
   .body{
       margin: 50px 0;
@@ -106,7 +119,8 @@ button:hover svg {
         float: right;
         width: 55%;
         height: 500px;
-        margin:15px 15px 15px 20px;
+        border: 5px solid #955E42;
+        margin:20px 20px 15px 30px;
   }
   article{
     display: flex;
@@ -117,7 +131,7 @@ button:hover svg {
     width: 80%;
 }
 .card_style{
-    background-color: #fff;
+    background-color: #F3EAF4;
     position: relative;
     max-width: 220px;
     margin: 40px 15px;
@@ -150,13 +164,13 @@ button:hover svg {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    color: #FFF;
+    color: #F3EAF4;
     font-size: 10px;
     text-align: center;
     line-height: 13px;
     font-weight: bold;
     opacity: .5;
-    background-color: rgb(39, 189, 59);
+    background-color: #AFC97E;
     border-radius: 50%;
     box-shadow: 0 10px 25px rgba(207, 207, 207, 0.1);
     border: 3px solid rgba(205, 180, 1000, 0.5);
@@ -166,14 +180,14 @@ button:hover svg {
       opacity: 1;
   }
   .card__date span{
-      color: rgba(2, 0, 105,.7);
+      color: rgba(3, 71, 50, .8);
       padding-bottom: 9px;
   }
 
   .card__date i{
       padding-bottom: 12px;
       font-size: 8px;
-    color: rgba(205, 180, 1000, 0.5);
+    color: rgba(149, 94, 66, .5);
   }
   .card__thumb{
     height: 175px;
@@ -220,7 +234,7 @@ button:hover svg {
     margin: 0;
     padding: 0;
     text-align: justify;
-    color: #666C74;
+    color: #F3EAF4;
     font-size: 12px;
     line-height: 15px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
@@ -245,7 +259,7 @@ button:hover svg {
   .card__footer{
 
     font-size: 11px;
-    color: #A3A9AB;
+    color: #F3EAF4;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -260,7 +274,7 @@ button:hover svg {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 
     font-size: 22px;
-    color: #000;
+    color: #AFC97E;
     font-weight: bold;
 
     .card_style:hover &{
@@ -306,7 +320,7 @@ button:hover svg {
 
 }
 .center i{
-    background-color: rgba(216, 31, 31, 0.5);
+    background-color: rgba(149, 94, 66, .5);
 
     padding: 9px;
     text-align: center;
@@ -314,12 +328,12 @@ button:hover svg {
     font-size: 12px;
     border-radius: 50%;
     border: rgb(199, 160, 53);
-    color: rgb(255, 255, 255);
+    color: #F3EAF4;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     box-shadow: 2px 2px 5px rgba(124, 124, 124, 0.5);
   }
   .center a i:hover{
-    background-color: rgba(216, 31, 31, 1);
+    background-color: rgba(3, 71, 50, .7);
   }
 
   .center a{
@@ -330,7 +344,7 @@ button:hover svg {
   }
   .comment{
       width: 70%;
-      color: rgba(29, 11, 104, 0.5);
+      color: rgba(3, 71, 50, .7);
       padding-bottom: 10px;
       padding-left: 10px;
       text-shadow: .1px .1px .5px rgba(0, 0, 0, 0.5);
