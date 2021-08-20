@@ -12,7 +12,7 @@
   justify-content: space-between;
   padding: 10px 0;
   background: transparent;
-  text-shadow: 10px 10px 50px white;
+  text-shadow: 10px 10px 50px #F3EAF4;
   background-color: transparent;
   transition: 0.5s background-color ease;
 }
@@ -24,12 +24,12 @@
 
 .navbar-lewagon a:hover {
   font-weight: 900;
-  color: white;
-  text-shadow: 20px 20px 70px white;
+  color: #F3EAF4;
+  text-shadow: 20px 20px 70px #F3EAF4;
 }
 
 .navbar-lewagon img:hover {
-  box-shadow: 20px 20px 70px white;
+  box-shadow: 20px 20px 70px #F3EAF4;
 
 }
 
@@ -49,7 +49,7 @@
 }
 
 .navbar-lewagon-white {
-  background-color: white;
+  background-color: #F3EAF4;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -68,14 +68,14 @@
   background: transparent;
   text-align: center;
   box-shadow: none;
-  color: white;
+  color: #F3EAF4;
   border: 0;
   padding: 0px;
   background-color: rgba(255, 255, 255, .3);
 }
 
 #burger-menu:hover {
-  box-shadow: 0 10px 30px rgba(247, 247, 247, 0.5);
+  box-shadow: 0 10px 30px #F3EAF4;
 }
 
 .navbar-expand-sm .navbar-nav .dropdown-menu {

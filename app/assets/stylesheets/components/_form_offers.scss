@@ -21,9 +21,9 @@
     padding: 60px 0;
 }
 legend{
-    background-color: #1EDD88;
+    background-color: #AFC97E;
     font-size: 1.5rem;
-    color: rgb(255, 255, 255);
+    color: #F3EAF4;
     font-weight: 700;
     width: 100%;
     text-align: center;
@@ -31,7 +31,7 @@ legend{
 }
 .form-example{
     padding: 20px 0;
-    color: white;
+    color: #F3EAF4;
     padding-left: 20px;
 }
 .range_input{
@@ -39,13 +39,13 @@ legend{
     flex-direction: column;
     padding-top: 60px;
     padding-left: 20px;
-    color: white;
+    color: #F3EAF4;
 }
 
 input {
     border-radius: 3px;
     max-width: 90%;
-    color: white;
+    color: #F3EAF4;
 }
 .form_example{
     text-align: center;
@@ -54,8 +54,8 @@ input {
 
 }
 .btn_search{
-    color: white;
-    background-color: blue;
+    color: #F3EAF4;
+    background-color: #034732;
     border:0;
     opacity: .6;
     padding: 8px 15px;
@@ -86,7 +86,7 @@ input {
   
   input[type=range] {
     -webkit-appearance: none;
-    border: 1px solid white;
+    border: 1px solid #F3EAF4;
     width: 300px;
     position: absolute;
     left: 0;
@@ -95,7 +95,7 @@ input {
   input[type=range]::-webkit-slider-runnable-track {
     width: 300px;
     height: 5px;
-    background: #ddd;
+    background: #F3EAF4;
     border: none;
     border-radius: 3px;
   
@@ -107,7 +107,7 @@ input {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: #21c1ff;
+    background: #034732;
     margin-top: -4px;
       cursor: pointer;
         position: relative;
@@ -119,13 +119,13 @@ input {
   }
   
   input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #ccc;
+    background: #F3EAF4;
   }
   
   input[type=range]::-moz-range-track {
     width: 300px;
     height: 5px;
-    background: #ddd;
+    background: #F3EAF4;
     border: none;
     border-radius: 3px;
   }
@@ -135,14 +135,14 @@ input {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: #21c1ff;
+    background: #034732;
     
   }
   
   
   
   input[type=range]:-moz-focusring {
-    outline: 1px solid white;
+    outline: 1px solid #F3EAF4;
     outline-offset: -1px;
   }
   
@@ -158,12 +158,12 @@ input {
   }
   
   input[type=range]::-ms-fill-lower {
-    background: #777;
+    background: #955E42;
     border-radius: 10px;
   }
   
   input[type=range]::-ms-fill-upper {
-    background: #ddd;
+    background: #F3EAF4;
     border-radius: 10px;
   }
   
@@ -172,15 +172,15 @@ input {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: #21c1ff;
+    background: #034732;
   }
   
   input[type=range]:focus::-ms-fill-lower {
-    background: #888;
+    background: #955E42;
   }
   
   input[type=range]:focus::-ms-fill-upper {
-    background: #ccc;
+    background: #F3EAF4;
   }
 
 @media screen and (max-width: 785px) {
