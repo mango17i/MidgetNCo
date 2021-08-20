@@ -8,7 +8,7 @@
     <% end %>
     <div class="img-container-show">
       <% if @offer.photos.attached? %>
-        <% @offer.photos.each do |photo| %>
+        <% @offer.photos.drop(1).each do |photo| %>
           <%= cl_image_tag photo.key, class: 'img-show', crop: :fill %>
         <% end %>
       <% end %>
