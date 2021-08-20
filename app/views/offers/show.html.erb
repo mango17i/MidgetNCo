@@ -3,10 +3,14 @@
     <h2><%= @offer.title %></h2>
   </div>
   <div class="photos-and-infos">
-    <%= cl_image_tag @offer.photos[0].key%>
+    <% if @offer.photos.attached? %>
+      <%= cl_image_tag @offer.photos[0].key%>
+    <% end %>
     <div class="img-container-show">
-      <% @offer.photos.each do |photo| %>
-        <%= cl_image_tag photo.key, class: 'img-show', crop: :fill %>
+      <% if @offer.photos.attached? %>
+        <% @offer.photos.each do |photo| %>
+          <%= cl_image_tag photo.key, class: 'img-show', crop: :fill %>
+        <% end %>
       <% end %>
     </div>
     <div class="description-and-book">
