@@ -1,6 +1,14 @@
 <div class="page-container">
   <div class="filter-container">
-    <form action="get" method="get" class="search_form">
+  <%= form_tag offers_path, method: :get do %>
+    <%= text_field_tag :query,
+      params[:query],
+      class: "form-control",
+      placeholder: "Find a midget"
+    %>
+    <%= submit_tag "Search", class: "btn btn-primary" %>
+  <% end %>
+  <form action="get" method="get" class="search_form">
       <fieldset for="midget_activity">
         <legend>Search your Midget</legend>
         <div class="range_input">
@@ -26,10 +34,10 @@
   <div class="card-container">
     <% @offers.each do |offer| %>
       <div class="card">
-        <div class="card_index">
-          <% if offer.photos.attached? %>
-            <%= cl_image_tag offer.photos[0].key%>
-          <% end %>
+      <div class="card_index">
+      <% if offer.photos.attached? %>
+        <%= cl_image_tag offer.photos[0].key%>
+        <% end %>
         </div>
         <div class="description-container">
           <h4><%= offer.title %></h4>
