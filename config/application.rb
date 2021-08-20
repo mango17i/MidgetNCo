@@ -13,6 +13,7 @@ module MidgetNCo
       generate.helper false
       generate.test_framework :test_unit, fixture: false
     end
+    config.active_storage.replace_on_assign_to_many = false
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
     # config.assets.initialize_on_precompile = false

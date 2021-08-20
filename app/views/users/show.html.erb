@@ -4,7 +4,7 @@
   <% @offers.each do |offer| %>
     <div class="offer-card">
       <div class="offer-card-pic">
-        <img src="https://source.unsplash.com/random" alt="">
+        <%= cl_image_tag offer.photos[0].key%>
       </div>
       <div class="offer-card-infos">
         <h3><%= offer.title %></h3>
@@ -22,9 +22,9 @@
 
   <h2>Here are your reservations :</h2>
   <% @reservations.each do |reserv| %>
-    <div class="offer-card">
-      <div class="offer-card-pic">
-        <img src="https://source.unsplash.com/random" alt="">
+    <div class="reserv-card">
+      <div class="reserv-card-pic">
+        <%= cl_image_tag reserv.offer.photos[0].key%>
       </div>
       <div class="offer-card-infos">
         <h3><%= reserv.offer.title %></h3>
