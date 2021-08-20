@@ -1,13 +1,12 @@
 <div class="container_new">
-
-  <div class="new_form">
-    <%= simple_form_for @offer do |f| %>
-      <%= f.input :title, label: "Offer's title:", error: 'Title is mandatory, enter one please' %>
-      <%= f.input :description, label: "Offer's description" %>
-      <%= f.input :photo, as: :file %>
-      <%= f.input :price %>
-      <%= f.input :address %>
-      <%= f.button :submit, "Create", class: "btn btn-success mt-3 px-5" %>
-  <% end %>
-  </div>
+<div class="new_form">
+<%= simple_form_for @offer do |f| %>
+  <%= f.input :title, label: "Offer's title:", error: 'Title is mandatory, enter one please' %>
+  <%= f.input :description, label: "Offer's description" %>
+  <%= f.file_field :photos, multiple: true %>
+  <%= f.input :price %>
+  <%= f.input :address %>
+  <%= f.button :submit, "Create", class: "btn btn-success mt-3 px-5" %>
+<% end %>
+</div>
 </div>

@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @disable_nav = true
     @offers = Offer.all
     @markers = @offers.map do |offer|
       {
