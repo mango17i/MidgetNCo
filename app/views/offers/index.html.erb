@@ -1,8 +1,6 @@
 <div class="page-container">
   <div class="filter-container">
-    <div class="filters col-10 col-md-4 offset-lg-2">
-        <div class="formulary card_item bg-grey rounded p-3">
-          <form action="" method="get" class="form-example">
+          <form action="get" method="get" class="search_form">
             <fieldset for="midget_activity">
             <legend>Search your Midget</legend>
               <div class="form-example">
@@ -15,13 +13,11 @@
                 <label for="end"> to: </label>
                 <input type="date" id="end" name="activity_end">
               </div>
-              <div class="form-example">
+              <div class="form_example">
                 <input type="submit" value="Search" class="btn_search">
               </div>
             </fieldset>
           </form>
-        </div>
-    </div>
   </div>
   <div class="card-container">
     <% @offers.each do |offer| %>
@@ -33,7 +29,9 @@
           <h4><%= offer.title %></h4>
           <p class="offer-description"><%= offer.description %></p>
           <p class="card-price"><%= offer.price %> DogeCoin</p>
-          <p><%= link_to 'Book The Midget !', offer, class: "text-decoration-none btn btn-success"%></P>
+        </div>
+        <div class="btn_book">
+          <%= link_to 'Book The Midget', offer, class: "text-decoration-none btn btn-success"%>
         </div>
       </div>
     <% end %>

@@ -1,6 +1,53 @@
 .page-container {
   display: flex;
-  position: relative;
   flex-direction: row;
+  flex-wrap: nowrap;
+  background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0.6)), url("http://www.slate.fr/sites/default/files/styles/1060x523/public/frodonvoyageinattendu.jpg");
+  background-size: contain;
+
   justify-content: space-around;
 }
+.card-container{
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+}
+.card{
+  width: 300px;
+  height: 350px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow:0 10px 30px rgba(255, 255, 255, .5);
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.card_index{
+  height: 40%;
+  object-fit: contain;
+  border-radius: 8px 8px 0 0;
+}
+.description-container{
+  height: 45%;
+  margin: 0;
+  padding: 10px;
+  text-align: justify;
+}
+.card-price{
+  font-size: 12px;
+  color: rgb(6, 24, 100);
+  padding: 15px 15px 0 0;
+  font-weight: 700;
+}
+.btn_book{
+  height: 15%;
+  text-align: center;
+}
+.btn_book a{
+  color: white;
+  border-radius: 5px;
+  padding: 8px 5px;
+}
+
