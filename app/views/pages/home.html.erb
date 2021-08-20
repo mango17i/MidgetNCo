@@ -1,44 +1,69 @@
 <div class="homepage">
-    <div class="home-banner">
-        <h1>MidgetNCo</h1>
-        <%= link_to offers_path do %>
+  <div class="home-banner">
+    <h1>MidgetNCo</h1>
+    <% if user_signed_in? %>
+      <%= link_to offers_path do %>
         <button>
-            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-            </svg>
-            <span>Offers</span>
+          <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg>
+          <span>Choose your Midget</span>
         </button>
-        <% end %>
-
-        <%= link_to new_offer_path do %>
+      <% end %>
+    <% else %>
+      <%= link_to user_session_path do %>
         <button>
-            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-            </svg>
-            <span>Midget</span>
+          <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg>
+          <span>Log in</span>
         </button>
-        <% end %>
-    </div>
+      <% end %>
+      <%= link_to new_user_registration_path do %>
+        <button>
+          <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg>
+          <span>Sign up</span>
+        </button>
+      <% end %>
+    <% end %>
+  </div>
 </div>
-    <div class="home_description">
-        <div class="section">
-            <div class="map">
-                <div id="map"
+<div class="body">
+  <div class="section">
+    <div class="knowus">
+      <h3>hola todos</h3>
+      <%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit " * 10 %>
+    </div>
+    <div class="policies">
+      <h3>hola todos</h3>
+      <%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit " * 10 %>
+    </div>
+    <div class="best">
+      <h3>hola todos</h3>
+      <div id="map"
                 style="width: 100%; height: 600px;"
                 data-markers="<%= @markers.to_json %>"
                 data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+<<<<<<< HEAD
             </div>
             <div class="knowus">
                 <h3>hola todos</h3>
-                <%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit " * 15 %>
+                <%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit " * 30 %>
             </div>
             <div class="policies">
                 <h3>hola todos</h3>
                 <%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit " * 10 %>
             </div>
-
+            
         </div>
+=======
+>>>>>>> c0618e32628547bb673ec7c8bad506aca3a18493
     </div>
+  </div>
+</div>
 </div>
