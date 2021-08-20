@@ -46,7 +46,9 @@
       <% end %>
     </div>
   </div>
-  <%= yield %>
+  <%= render 'shared/navbar_midget' unless @disable_nav %>
+    <%= yield %>
+
   <footer>
     <ul class="social" id="social">
       <li class="fb"><a href="https://fr-fr.facebook.com/"><%= icon('fab', 'facebook') %></a></li>
@@ -56,5 +58,5 @@
     </ul>
     <p class="copyright"><%= icon('fas', 'copyright') %> Copyright by Vims</p>
   </footer>
-</body>
+  </body>
 </html>
