@@ -3,6 +3,9 @@
   padding-top: 50px;
   top: 2px;
   z-index: 10;
+  background-color:linear-gradient(rgba(53, 53, 53, 0.4)), rgb(172, 172, 172);
+  border-radius: 0 0 8px 8px;
+
 }
 
 .navbar-lewagon {
@@ -40,8 +43,8 @@
 }
 
 #logo {
-  height: 80px;
-  width: 120px;
+  height: 40px;
+  width: 60px;
   opacity: .8;
 }
 
