@@ -4,7 +4,7 @@
         <div class="formulary card_item bg-grey rounded p-3">
           <form action="" method="get" class="form-example">
             <fieldset for="midget_activity">
-            <legend>Search your Midget</legend>          
+            <legend>Search your Midget</legend>
               <div class="form-example">
                 <input type="range" name="Price" id="price" min="0" max="500" value="250" step="10" required>
                 <label for="price">Range price</label>
@@ -26,8 +26,8 @@
   <div class="card-container">
     <% @offers.each do |offer| %>
       <div class="card">
-      <% if offer.photo.attached? %>
-        <%= cl_image_tag offer.photo.key %>
+      <% if offer.photos.attached? %>
+        <%= cl_image_tag offer.photos[0].key%>
         <% end %>
         <div class="description-container">
           <h4><%= offer.title %></h4>
