@@ -1,11 +1,11 @@
 footer{
     box-shadow: 10px 0 30px rgba(255, 255, 255, 0.2);
-      padding: 50px 9%;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       position: relative;
       justify-content: space-around;
+      background-color: #864d1c;
   }
   .social{
       width: 70%;
@@ -13,8 +13,9 @@ footer{
       flex-direction: row;
       flex-wrap: nowrap;
       font-size: 25px;
-      padding-bottom: 30px;
+      padding: 16px;
       justify-content: space-around;
+      margin-bottom: 0px;
   }
   .social li{
     opacity: .5;
@@ -31,7 +32,7 @@ footer{
     background: linear-gradient(#1977f2, rgba(25, 119, 242,.8));
   }
   .insta{
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);      
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
         }
         .twitter{
             background: linear-gradient(#1ca1f3, rgba(28, 161, 243,.8));
@@ -39,7 +40,7 @@ footer{
           .snap{
             background: linear-gradient(#efeb5b, rgba(239, 235, 91,.8));
           }
- 
+
   .copyright{
       position: absolute;
       top: 70%;
