@@ -1,12 +1,12 @@
 <div class="page-container">
   <div class="filter-container">
-  <%= form_tag offers_path, method: :get do %>
+  <%= form_tag offers_path, class: "mb-3", method: :get do %>
     <%= text_field_tag :query,
       params[:query],
       class: "form-control",
       placeholder: "Find a midget"
     %>
-    <%= submit_tag "Search", class: "btn btn-primary" %>
+    <%= submit_tag "Search", class: "btn btn-primary mt-1" %>
   <% end %>
   <form action="get" method="get" class="search_form">
       <fieldset for="midget_activity">

@@ -3,8 +3,7 @@
   top: 1px;
   padding-top: 50px;
   z-index: 10;
-  background-color:linear-gradient(rgba(53, 53, 53, 0.4)), rgb(172, 172, 172);
-  border-radius: 0 0 8px 8px;
+  background: linear-gradient(#F3EAF4, rgba(149, 94, 66, .6));
 
 }
 
@@ -13,6 +12,7 @@
   padding: 1px 0;
   background: transparent;
   text-shadow: 10px 10px 50px #F3EAF4;
+  background: linear-gradient(#F3EAF4, rgba(149, 94, 66, .6));
   background-color: transparent;
   transition: 0.5s background-color ease;
 }
@@ -35,7 +35,7 @@
 
 .navbar img {
   border-radius: 50%;
-  background-color: linear-gradient(rgba(53, 53, 53, 0.4), rgba(126, 126, 126, 0.4));
+  background: linear-gradient(#F3EAF4, rgba(149, 94, 66, .6));
   width: 50px;
   height: 50px;
   margin-left: 30px;
